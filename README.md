@@ -1,0 +1,2 @@
+# WICK-OS
+🔴 Welcome 🔵
