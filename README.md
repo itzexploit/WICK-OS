@@ -1,6 +1,8 @@
 # WICK-OS
 🔴 Welcome 🔵
 
+<img src="https://github.com/thebabayagakiller/WICK-OS/blob/main/wick-os.jpg?raw=true">
+
 ⭐ FOR LINUX : [
 
 sudo apt-get update
