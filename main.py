@@ -1,4 +1,4 @@
-from os import system , kill , getpid , name , remove
+from os import system , kill , getpid , name , remove , rmdir
 from colorama import Fore , init
 from pystyle import Colorate , Colors
 from time import sleep , time
@@ -8,6 +8,7 @@ from getpass import getuser
 from socket import socket , AF_INET , SOCK_STREAM , gethostbyname
 from requests import get
 from urllib.parse import urlparse
+from platform import uname
 
 init()
 
@@ -35,7 +36,7 @@ def main():
     while True:
         try:
             c2 = input(Fore.LIGHTRED_EX+"\n  ╔═══"+Fore.LIGHTRED_EX+"["+Fore.LIGHTYELLOW_EX+"root"+Fore.LIGHTGREEN_EX+"@"+Fore.LIGHTYELLOW_EX+f"{getuser()}"+Fore.LIGHTRED_EX+"]"+Fore.LIGHTRED_EX+"\n  ╚══\x1b[38;2;0;255;189m>>> "+Fore.LIGHTGREEN_EX)
-            if c2 == '.exit':
+            if c2 == 'exit':
                 print(f'\n  {red}[{yellow}+{red}] {cyan}Bye {red}Bye {yellow}Bro {green}!');sleep(1);kill(getpid(), 9)
             elif c2 == 'cmd':
                 print(f'\n  {yellow}Created {red}By {cyan}John Wick\n  {white}({green}c{white}){yellow} Version {red}1{blue}.{red}0 {magenta}2024 {cyan}OS {red}:{green} Wick')
@@ -55,21 +56,7 @@ def main():
             elif c2 == 'uname':
                 print(f'\n  {red}John {yellow}Wick {green}OS {blue}Version {red}1{yellow}.{green}0')
             elif c2.split()[0] == 'ping':
-                for _ in range(5):
-                    try:
-                        target = {c2.split()[1]}
-                        ip = gethostbyname(target)
-                        start_time = time()
-                        client_socket = socket(AF_INET, SOCK_STREAM)
-                        client_socket.settimeout(5)
-                        client_socket.connect(({ip}, 80))
-                        client_socket.close()
-                        end_time = time.time()
-                        response_time = (end_time - start_time) * 1000
-                        print(f"{red}Connected to {cyan}{ip}{cyan}:{green} time{green}={green}{response_time:.2f}ms {yellow}protocol{yellow}={yellow}TCP {magenta}port{magenta}={magenta}80")
-                    except Exception as e:
-                        print(f"\n {blue}Connection timed out")
-                    time.sleep(0.4)
+                system(f'ping {c2.split()[1]}')
             elif c2.split()[0] == 'waf':
                 url = c2.split()[1]
                 parsed_url = urlparse(url)
@@ -100,11 +87,11 @@ def main():
 
 '''
                 print(Colorate.Horizontal(Colors.blue_to_green,b,1))
-            elif c2 == 'apt update':
-                system('mkdir wick-os')
-                system('cd wick-os && curl https://github.com/thebabayagakiller/WICK-OS && cd wick-os && python main.py')
+
             elif c2.split()[0] == 'rm':
-                remove(c2.split()[2])
+                remove(f'{c2.split()[2]}')
+            elif c2.split()[0] == 'rmdir':
+                rmdir(f'{c2.split()[2]}')
             elif c2.split()[0] == 'mkdir':
                 system(f'mkdir {c2.split()[1]}')
             elif c2.split()[0] == 'cat':
@@ -113,6 +100,35 @@ def main():
                     print(fil)
             elif c2.split()[0] == 'nano':
                 system(f'notepad {c2.split()[1]}')
+            elif c2 == 'help':
+                banr = f'''{yellow}                      ╔╦╗╦ ╦╔═╗  ╔╗ ╔═╗╔╗ ╔═╗  ╦ ╦╔═╗╔═╗╔═╗  ╦╔═╦╦  ╦  ╔═╗╦═╗  {green}The {blue}BABA{red}-{cyan}YAGA{yellow} Killer{blue}
+                       ║ ╠═╣║╣   ╠╩╗╠═╣╠╩╗╠═╣  ╚╦╝╠═╣║ ╦╠═╣  ╠╩╗║║  ║  ║╣ ╠╦╝    {green}Terminal {red}and {blue}Cmd{red}    
+                       ╩ ╩ ╩╚═╝  ╚═╝╩ ╩╚═╝╩ ╩   ╩ ╩ ╩╚═╝╩ ╩  ╩ ╩╩╩═╝╩═╝╚═╝╩╚═      {blue}Version {yellow}0{red}.{green}1
+
+                  ╚╦═══════════════════════════════════════════════════════════════════════════╦╝
+             ╔═════╩═══════════════════════════════════════════════════════════════════════════╩═════╗
+                
+		{red}[{yellow}+{red}]{cyan} clear    {red}:{green} clear page
+                {red}[{yellow}+{red}]{cyan} cmd      {red}:{green} show terminal info
+                {red}[{yellow}+{red}]{cyan} exit     {red}:{green} exit
+                {red}[{yellow}+{red}]{cyan} now      {red}:{green} show date & time
+                {red}[{yellow}+{red}]{cyan} ifconfig {red}:{green} ipconfig
+		{red}[{yellow}+{red}]{cyan} uname    {red}:{green} show system
+		{red}[{yellow}+{red}]{cyan} ls       {red}:{green} show directory
+		{red}[{yellow}+{red}]{cyan} ping     {red}:{green} pinging
+		{red}[{yellow}+{red}]{cyan} rm       {red}:{green} remove file
+		{red}[{yellow}+{red}]{cyan} rmdir    {red}:{green} remove folder
+		{red}[{yellow}+{red}]{cyan} mkdir    {red}:{green} create folder
+		{red}[{yellow}+{red}]{cyan} cat      {red}:{green} show text or ... on screen
+		{red}[{yellow}+{red}]{cyan} nano     {red}:{green} open notepad for write
+                {red}[{yellow}+{red}]{cyan} uname -a     {red}:{green} show real system info
+                {red}[{yellow}+{red}]{cyan} and more cmd commands {red}.{yellow}.{blue}.{green}
+               
+	     ╚═══════════════════════════════════════════════════════════════════════════════════════╝'''
+                system('cls' if name == 'nt' else 'clear')
+                print(banr)
+            elif c2 == 'uname -a':
+                print(f'\n  {cyan}{uname()}')
             else:
                 system(c2)
         except:
