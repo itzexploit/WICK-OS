@@ -121,7 +121,7 @@ def main():
 		{red}[{yellow}+{red}]{cyan} mkdir    {red}:{green} create folder
 		{red}[{yellow}+{red}]{cyan} cat      {red}:{green} show text or ... on screen
 		{red}[{yellow}+{red}]{cyan} nano     {red}:{green} open notepad for write
-                {red}[{yellow}+{red}]{cyan} uname -a     {red}:{green} show real system info
+                {red}[{yellow}+{red}]{cyan} uname -a {red}:{green} show real system info
                 {red}[{yellow}+{red}]{cyan} and more cmd commands {red}.{yellow}.{blue}.{green}
                
 	     ╚═══════════════════════════════════════════════════════════════════════════════════════╝'''
