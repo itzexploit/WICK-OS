@@ -3,6 +3,8 @@
 
 <img src="https://github.com/thebabayagakiller/WICK-OS/blob/main/wick-os.jpg?raw=true">
 
+Use help command to show Help Menu
+
 ⭐ FOR LINUX : [
 
 sudo apt-get update
