@@ -19,7 +19,7 @@ system('cls' if name == 'nt' else 'clear')
 banner = '''                                                         
                       ╔╦╗╦ ╦╔═╗  ╔╗ ╔═╗╔╗ ╔═╗  ╦ ╦╔═╗╔═╗╔═╗  ╦╔═╦╦  ╦  ╔═╗╦═╗  The BABA-YAGA Killer
                        ║ ╠═╣║╣   ╠╩╗╠═╣╠╩╗╠═╣  ╚╦╝╠═╣║ ╦╠═╣  ╠╩╗║║  ║  ║╣ ╠╦╝    Terminal and Cmd    
-                       ╩ ╩ ╩╚═╝  ╚═╝╩ ╩╚═╝╩ ╩   ╩ ╩ ╩╚═╝╩ ╩  ╩ ╩╩╩═╝╩═╝╚═╝╩╚═      Version 0.1
+                       ╩ ╩ ╩╚═╝  ╚═╝╩ ╩╚═╝╩ ╩   ╩ ╩ ╩╚═╝╩ ╩  ╩ ╩╩╩═╝╩═╝╚═╝╩╚═      Version 1.2
 
                 ╚╦═══════════════════════════════════════════════════════════════════════════╦╝
            ╔═════╩═══════════════════════════════════════════════════════════════════════════╩═════╗
@@ -39,7 +39,7 @@ def main():
             if c2 == 'exit':
                 print(f'\n  {red}[{yellow}+{red}] {cyan}Bye {red}Bye {yellow}Bro {green}!');sleep(1);kill(getpid(), 9)
             elif c2 == 'cmd':
-                print(f'\n  {yellow}Created {red}By {cyan}John Wick\n  {white}({green}c{white}){yellow} Version {red}1{blue}.{red}0 {magenta}2024 {cyan}OS {red}:{green} Wick')
+                print(f'\n  {yellow}Created {red}By {cyan}John Wick\n  {white}({green}c{white}){yellow} Version {red}1{blue}.{red}2 {magenta}2024 {cyan}OS {red}:{green} Wick')
             elif c2 == 'cls':
                 system('cls' if name == 'nt' else 'clear')
                 print(Colorate.Horizontal(Colors.blue_to_red,banner,1))
@@ -54,7 +54,7 @@ def main():
                 d = datetime.now()
                 print(f'\n  {yellow}Date {red}& {cyan}Time {red}:{green}',d)
             elif c2 == 'uname':
-                print(f'\n  {red}John {yellow}Wick {green}OS {blue}Version {red}1{yellow}.{green}0')
+                print(f'\n  {red}John {yellow}Wick {green}OS {blue}Version {red}1{yellow}.{green}2')
             elif c2.split()[0] == 'ping':
                 system(f'ping {c2.split()[1]}')
             elif c2.split()[0] == 'waf':
@@ -73,7 +73,7 @@ def main():
                 b = f'''
                       ╔╦╗╦ ╦╔═╗  ╔╗ ╔═╗╔╗ ╔═╗  ╦ ╦╔═╗╔═╗╔═╗  ╦╔═╦╦  ╦  ╔═╗╦═╗  The BABA-YAGA Killer
                        ║ ╠═╣║╣   ╠╩╗╠═╣╠╩╗╠═╣  ╚╦╝╠═╣║ ╦╠═╣  ╠╩╗║║  ║  ║╣ ╠╦╝    Terminal and Cmd    
-                       ╩ ╩ ╩╚═╝  ╚═╝╩ ╩╚═╝╩ ╩   ╩ ╩ ╩╚═╝╩ ╩  ╩ ╩╩╩═╝╩═╝╚═╝╩╚═      Version 0.1
+                       ╩ ╩ ╩╚═╝  ╚═╝╩ ╩╚═╝╩ ╩   ╩ ╩ ╩╚═╝╩ ╩  ╩ ╩╩╩═╝╩═╝╚═╝╩╚═      Version 1.2
 
                   ╚╦═══════════════════════════════════════════════════════════════════════════╦╝
              ╔═════╩═══════════════════════════════════════════════════════════════════════════╩═════╗
@@ -103,7 +103,7 @@ def main():
             elif c2 == 'help':
                 banr = f'''{yellow}                      ╔╦╗╦ ╦╔═╗  ╔╗ ╔═╗╔╗ ╔═╗  ╦ ╦╔═╗╔═╗╔═╗  ╦╔═╦╦  ╦  ╔═╗╦═╗  {green}The {blue}BABA{red}-{cyan}YAGA{yellow} Killer{blue}
                        ║ ╠═╣║╣   ╠╩╗╠═╣╠╩╗╠═╣  ╚╦╝╠═╣║ ╦╠═╣  ╠╩╗║║  ║  ║╣ ╠╦╝    {green}Terminal {red}and {blue}Cmd{red}    
-                       ╩ ╩ ╩╚═╝  ╚═╝╩ ╩╚═╝╩ ╩   ╩ ╩ ╩╚═╝╩ ╩  ╩ ╩╩╩═╝╩═╝╚═╝╩╚═      {blue}Version {yellow}0{red}.{green}1
+                       ╩ ╩ ╩╚═╝  ╚═╝╩ ╩╚═╝╩ ╩   ╩ ╩ ╩╚═╝╩ ╩  ╩ ╩╩╩═╝╩═╝╚═╝╩╚═      {blue}Version {yellow}1{red}.{green}2
 
                   ╚╦═══════════════════════════════════════════════════════════════════════════╦╝
              ╔═════╩═══════════════════════════════════════════════════════════════════════════╩═════╗
@@ -115,14 +115,14 @@ def main():
                 {red}[{yellow}+{red}]{cyan} ifconfig {red}:{green} ipconfig
 		{red}[{yellow}+{red}]{cyan} uname    {red}:{green} show system
 		{red}[{yellow}+{red}]{cyan} ls       {red}:{green} show directory
-		{red}[{yellow}+{red}]{cyan} ping     {red}:{green} pinging | usage : ping target_ip
-		{red}[{yellow}+{red}]{cyan} rm       {red}:{green} remove file | usage : rm filename
-		{red}[{yellow}+{red}]{cyan} rmdir    {red}:{green} remove folder | usage : rmdir folder_name
-		{red}[{yellow}+{red}]{cyan} mkdir    {red}:{green} create folder | usage : mkdir foldername
-		{red}[{yellow}+{red}]{cyan} cat      {red}:{green} show text or ... on screen | usage : cat filename
-		{red}[{yellow}+{red}]{cyan} nano     {red}:{green} open notepad for write | usage : filename
+		{red}[{yellow}+{red}]{cyan} ping     {red}:{green} pinging {red}|{green} usage {yellow}:{green} ping target_ip
+		{red}[{yellow}+{red}]{cyan} rm       {red}:{green} remove file {red}|{green} usage {yellow}:{green} rm filename
+		{red}[{yellow}+{red}]{cyan} rmdir    {red}:{green} remove folder {red}|{green} usage {yellow}:{green} rmdir folder_name
+		{red}[{yellow}+{red}]{cyan} mkdir    {red}:{green} create folder {red}|{green} usage {yellow}:{green} mkdir foldername
+		{red}[{yellow}+{red}]{cyan} cat      {red}:{green} show text or ... on screen {red}|{green} usage {yellow}:{green} cat filename
+		{red}[{yellow}+{red}]{cyan} nano     {red}:{green} open notepad for write {red}|{green} usage {yellow}:{green} filename
                 {red}[{yellow}+{red}]{cyan} uname -a {red}:{green} show real system info
-                {red}[{yellow}+{red}]{cyan} waf      {red}:{green} detect waf | usage : waf https://target.com
+                {red}[{yellow}+{red}]{cyan} waf      {red}:{green} detect waf {red}|{green} usage {yellow}:{green} waf https://target.com
                 {red}[{yellow}+{red}]{cyan} and more cmd commands {red}.{yellow}.{blue}.{green}
                
 	     ╚═══════════════════════════════════════════════════════════════════════════════════════╝'''
