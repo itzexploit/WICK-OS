@@ -115,13 +115,14 @@ def main():
                 {red}[{yellow}+{red}]{cyan} ifconfig {red}:{green} ipconfig
 		{red}[{yellow}+{red}]{cyan} uname    {red}:{green} show system
 		{red}[{yellow}+{red}]{cyan} ls       {red}:{green} show directory
-		{red}[{yellow}+{red}]{cyan} ping     {red}:{green} pinging
-		{red}[{yellow}+{red}]{cyan} rm       {red}:{green} remove file
-		{red}[{yellow}+{red}]{cyan} rmdir    {red}:{green} remove folder
-		{red}[{yellow}+{red}]{cyan} mkdir    {red}:{green} create folder
-		{red}[{yellow}+{red}]{cyan} cat      {red}:{green} show text or ... on screen
-		{red}[{yellow}+{red}]{cyan} nano     {red}:{green} open notepad for write
+		{red}[{yellow}+{red}]{cyan} ping     {red}:{green} pinging | usage : ping target_ip
+		{red}[{yellow}+{red}]{cyan} rm       {red}:{green} remove file | usage : rm filename
+		{red}[{yellow}+{red}]{cyan} rmdir    {red}:{green} remove folder | usage : rmdir folder_name
+		{red}[{yellow}+{red}]{cyan} mkdir    {red}:{green} create folder | usage : mkdir foldername
+		{red}[{yellow}+{red}]{cyan} cat      {red}:{green} show text or ... on screen | usage : cat filename
+		{red}[{yellow}+{red}]{cyan} nano     {red}:{green} open notepad for write | usage : filename
                 {red}[{yellow}+{red}]{cyan} uname -a {red}:{green} show real system info
+                {red}[{yellow}+{red}]{cyan} waf         {red}:{green} detect waf | usage : waf https://target.com
                 {red}[{yellow}+{red}]{cyan} and more cmd commands {red}.{yellow}.{blue}.{green}
                
 	     ╚═══════════════════════════════════════════════════════════════════════════════════════╝'''
