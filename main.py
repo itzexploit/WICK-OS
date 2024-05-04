@@ -122,7 +122,7 @@ def main():
 		{red}[{yellow}+{red}]{cyan} cat      {red}:{green} show text or ... on screen | usage : cat filename
 		{red}[{yellow}+{red}]{cyan} nano     {red}:{green} open notepad for write | usage : filename
                 {red}[{yellow}+{red}]{cyan} uname -a {red}:{green} show real system info
-                {red}[{yellow}+{red}]{cyan} waf         {red}:{green} detect waf | usage : waf https://target.com
+                {red}[{yellow}+{red}]{cyan} waf      {red}:{green} detect waf | usage : waf https://target.com
                 {red}[{yellow}+{red}]{cyan} and more cmd commands {red}.{yellow}.{blue}.{green}
                
 	     ╚═══════════════════════════════════════════════════════════════════════════════════════╝'''
